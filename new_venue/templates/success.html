@@ -1,0 +1,16 @@
+{% extends "form.html" %}
+{% block body %}
+<h2>New Venue Added!</h2>
+<form action="{{ url_for('new_venue') }}" method=post class=add-entry>
+</form> 
+<ul class=entries>
+{% for picture, venue in picture_list %}
+    <li><h2>{{ venue.venue_name}}</h2>
+    <li><img src="data:image/jpg;base64,{{picture}}">
+    
+{% else %}
+    <li><h2>Unbelievable.  No venues here so far</h2>
+{% endfor %}
+
+</ul>
+{% endblock %}

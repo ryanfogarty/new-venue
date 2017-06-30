@@ -1,0 +1,18 @@
+{% extends "form.html" %}
+{% block body %}
+    {% if session.logged_in %}  
+     <form action="{{ url_for('new_venue') }}" method=post class=add-entry enctype= multipart/form-data>
+         <dl>
+            <dt>Enter Venue Name:
+            <dd><input type=text size=30 name=venue_name>
+            <dt>Enter Venue Address
+            <dd><input type=text size=30 name=venue_address>
+            <dt>Enter Password:
+            <dd><input type=text size=30 name=venue_password>
+            <dt>Enter Picture:
+            <dd><input type = "file" name = "venue_picture">
+            <dd><input type=submit value=Enter>
+         </dl>
+     </form>
+    {% endif %}
+{%endblock %}

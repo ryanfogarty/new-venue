@@ -1,0 +1,13 @@
+MANIFEST.in
+new_venue/__init__.py
+new_venue/schema.sql
+new_venue.egg-info/PKG-INFO
+new_venue.egg-info/SOURCES.txt
+new_venue.egg-info/dependency_links.txt
+new_venue.egg-info/requires.txt
+new_venue.egg-info/top_level.txt
+new_venue/static/style.css
+new_venue/templates/form.html
+new_venue/templates/login.html
+new_venue/templates/new_venue.html
+new_venue/templates/valid_code.html

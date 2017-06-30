@@ -1,0 +1,3 @@
+graft new_venue/templates
+graft new_venue/static
+include new_venue/schema.sql
